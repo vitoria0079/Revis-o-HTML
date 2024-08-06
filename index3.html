@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Flexíveis</title>
+    
+</head>
+<body>
+    <picture>
+        <!-- tag <source> possui 3 atributos:
+         type: indica o tipo da mídia da imagem que usaremos 
+         srcset: vai configurar o nome da imagem que será carregada quando o tamanho indicado for atingido
+         media: indica o tamanho máximo a ser considerado para carregar a imagem -->
+
+        <source media="(max-width: 750px )" srcset="imagem/foto-p.png" type="image/png">
+        <source media="(max-width:1000px )" srcset="imagem/foto-m.png" type="image/png">
+        <img src="imagem/foto-g.png" alt="Imagem de Tamanho Grande">
+    </picture>
+    
+    <!-- preload indica que o áudio será pré carregado ou não e aceita 3 valores:
+        metadata: carregar apenas informações sobre o arquivo (tamanho, tempo, informações de direitos, etc).
+        none: não vai carregar absolutamente nada até que o usuário clique no botão play.
+        auto (padrão): vai carregar o arquivo de áudio inteiro assim que a página for carregada.
+        atributos: controls: vai apresentar o paluer na tela. Caso não seja colocado na tag <audio> o controle será transparente e o
+     usuário não poderá interagir com ele.
+        autoplay: inicia a reprodução do áudio assim que a página for carregada.
+        loop: faz com que o áudio seja repetido eternamente. -->
+    <audio preload="metadata" controls autoplay loop>
+        <source src="midias/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midias/guanacast-33.wav" type="audio/wav">
+        <p>Seu navegador não suporta o áudio</p>
+        <a href="midias/guanacast-33.mp3" download="midias/guanacast-33.mp3" type="audio.mpeg"></a>
+    </audio>
+    <br><hr><br>
+    <h2>Testando Vídeos</h2>
+    <!-- width: indica a largura que o vídeo vai ter na tela, em pixels.
+        poster: configura uma imagem que vai aparecer como capa, enquanto o visitante não aperta o play para reproduzir o vídeo.
+        controls: vai configurar os controles do vídeo. Por padrão os controles não irão aparecer, basta colocar o atributo que aparecerão.
+        autoplay: inicia a reprodução do áudio assim que a página for carregada. -->
+    <video width="600" poster="imagem/limoes-capa.png" controls autoplay>
+        <source src="midias/meu-video.mp4" type="video/mp4">
+        <source src="midias/meu-video.ogv" type="video/ogv">
+        <source src="midias/meu-video.webm" type="video/webm">
+        <p>Infelizmente seu navegador não conseguiu carregar o vídeo</p>
+    </video>
+
+</body>
+</html>

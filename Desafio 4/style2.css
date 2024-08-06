@@ -1,0 +1,49 @@
+h2{
+    text-align: center;
+}
+
+body{
+    background-color:rgb(246, 242, 234)
+}
+
+p{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+
+ul{
+    font-size: 20px;
+}
+
+
+
+a{
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(153, 114, 122);
+}
+
+a:visited{
+    color: rgb(216, 152, 155);
+}
+
+img {
+    display: block;
+    margin: auto;
+  }
+
+audio{
+    display:block ;
+    margin:auto ;
+}
+
+#centro {
+    overflow: hidden; /* Para garantir que o contêiner envolva os itens flutuantes */
+  }
+  .esquerda {
+    float: left;
+  }
+  .direita {
+    float: right;
+  }

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        mark{
+            background-color: rgb(188, 87, 107);
+        }
+    </style>
+    <title>Comandos HTML 5</title>
+</head>
+<body>
+    <h1>Principais Formatações HTML 5</h1>
+    <h2>Negrito/Destaque</h2>
+    <p>Nesta frase temos um <b>termo em negrito</b> usando a tag b (não semântica)</p>
+    <p>Nesta frase, temos um <strong>termo em destaque</strong> usando a tag STRONG (semântico)</p>
+    <br><hr><br>
+    <h2>Itálico/Ênfase</h2>
+    <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag i (não semântico)</p>
+    <p>Nesta frase, temos um <em>termo em ênfase</em> usando a tag EM (semântico)</p>
+    <br><hr><br>
+    <h2>Texto Marcado</h2>
+    <p>Podemos criar também <mark>um texto marcado</mark> usando a tag MARK</p>
+    <p>E no outro parágrafo, temos <mark>outro texto marcado </mark> no final.</p>
+
+    <!-- Os valores possíveis são scroll, slide e alternate. Se nenhum valor for especificado, o valor padrão será scroll.
+     direction: os possíveis valores são: left, right, up e down.
+     Se nenhum valor for especificado, o valor padrão será "left" -->
+     <marquee behavior = "alternate" direction = "right">O elemento html MARQUE é usado para inserir uma área de rolagem de texto "scrolling", similar a um letreiro.</marquee>
+    <br><hr><br>
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> nesse parágrafo.</p>
+    <br><hr><br>
+    <h2>Texto Deletado</h2>
+    <p>Podemos marcar <del>um texto excluído</del> para indicar que ele deve ser lido, mas não considerado</p>
+    <br><hr><br>
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar <ins>um texto como inserido</ins> para dar ênfase e indicar que ele foi adicionado depois</p>
+    <p>Existe também o <u>sublinhado</u> com a tag U (não semântica)</p>
+    <br><hr><br>
+    <h2>Texto Sobrescrito</h2>
+    <p>Para inserir coisas do tipo x <sub>20</sub>+3.</p>
+    <br><hr><br>
+    <h2>Texto Subscrito</h2>
+    <p>Para inserir coisas do tipo H <sub>2</sub>O.</p>
+    <br><hr><br>
+    <h2>Exemplo de trecho de código</h2>
+    <!-- code: delimita um texto informando que é um código de programação
+     pre: indica que o texto informado deve seguir a pré formatação do texto -->
+    <pre>
+        <code>
+            console.log ('Digite um número');
+            if num % 2 == 0;
+                console.log ('O número é par');
+            else
+                console.log ('O número ímpar');
+        </code>
+    </pre>
+
+    <br><hr><br>
+    <h2>Abreviações</h2>
+    <p>Estamos aprendendo <abbr title="Linguagem de Marcação de Texto">HTML</abbr></p>
+    <br><hr><br>
+    <h2>Links</h2>
+    <a href="https://www.w3schools.com" target="_blank">Tutorial HTML</a>
+    <p>No link acima fizemos referência a um link externo</p>
+    <a href="index.html" target="_self">Página 1</a>
+    <p>Neste link estamos fazendo referência a uma página interna do site</p>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+
+h1{
+    color:black;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+h2{
+    text-align: center;
+}
+
+
+body{
+    background-color:rgb(246, 242, 234)
+}
+
+p{
+    padding: 30px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+
+ol{
+    font-size: 20px;
+}
+
+#centro{
+    margin-left: 620px;
+
+}
+
+mark{
+    background-color: rgb(195, 161, 167);
+}
+
+
+a{
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(153, 114, 122);
+}
+
+a:visited{
+    color: rgb(216, 152, 155);
+}
+
+    
